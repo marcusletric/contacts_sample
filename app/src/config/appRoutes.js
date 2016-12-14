@@ -2,12 +2,14 @@ contactsApp.constant('routes', [
         {
             name: "home",
             url: "/home",
-            templateUrl: 'src/home/templates/home.html'
+            templateUrl: 'src/home/templates/home.html',
+            controller: 'homeController'
         },
         {
             name: 'contactDetails',
             url: '/details?id&edit&new',
             templateUrl: 'src/editContact/templates/editContact.html',
+            controller: 'editContactController',
             params: {
                 'id': null,
                 'edit': null,

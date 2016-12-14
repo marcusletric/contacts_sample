@@ -53,5 +53,18 @@ contactsApp.services.contactsProvider.service('contactsProvider', function($http
             }
 
             return deferred.promise;
+        };
+
+        self.storeContact = function(contact){
+            if(!contact.id){
+                self.getContacts(true).then(function() {
+                    contact.id = contactsCache.length;
+                    contactsCache.push(contact);
+                    storageProvider.store('contacts', contactsCache);
+                });
+            } else {
+                contactsCache[contact.id] = contact;
+                storageProvider.store('contacts', contactsCache);
+            }
         }
 });

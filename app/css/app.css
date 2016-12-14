@@ -5249,6 +5249,9 @@ button.close {
   .hidden-print {
     display: none !important; } }
 
+article {
+  margin-top: 15px; }
+
 .contact-list {
   max-width: 1024px;
   margin: 15px;
