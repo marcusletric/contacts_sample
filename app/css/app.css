@@ -5249,5 +5249,20 @@ button.close {
   .hidden-print {
     display: none !important; } }
 
-.a {
-  display: block; }
+.contact-list {
+  max-width: 1024px;
+  margin: 15px;
+  padding: 0 15px;
+  border: 1px solid #eee; }
+  .contact-list .row {
+    border-bottom: 1px solid #777777; }
+    .contact-list .row:hover {
+      background-color: #eee; }
+    .contact-list .row > div {
+      min-height: 35px; }
+      .contact-list .row > div > a, .contact-list .row > div > p {
+        line-height: 35px; }
+    .contact-list .row .avatar {
+      height: 30px;
+      padding: 2.5px;
+      float: left; }

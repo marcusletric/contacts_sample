@@ -1,8 +1,13 @@
-<ul>
-    <li ng-repeat="contact in contacts">
-        <a ui-sref="contact.details({ id: contact.id })">
-            <p>{{::contact.name}}</p>
-            <p>{{::contact.email}}</p>
-        </a>
-    </li>
-</ul>
+<div class="contact-list .container-fluid">
+    <div ng-repeat="contact in contacts" class="row">
+        <div class="col-sm-2 col-xs-12">
+            <img class="avatar" src="{{::contact.avatar}}">
+        </div>
+        <div class="col-sm-5 col-xs-12">
+            <a ui-sref="contactDetails({ id: contact.id })" >{{::contact.name}}</a>
+        </div>
+        <div class="col-sm-5 col-xs-12">
+            <a href="mailto:{::contact.email}">{{::contact.email}}</a>
+        </div>
+    </div>
+</div>

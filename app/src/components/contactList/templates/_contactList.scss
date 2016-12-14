@@ -1,0 +1,23 @@
+.contact-list {
+  max-width: 1024px;
+  margin: 15px;
+  padding: 0 15px;
+  border: 1px solid #eee;
+  .row {
+    border-bottom: 1px solid $gray-light;
+    &:hover {
+      background-color: #eee;
+    }
+    & > div{
+      min-height: 35px;
+      & > a, & > p {
+        line-height: 35px;
+      }
+    }
+    .avatar {
+      height: 30px;
+      margin: 2.5px;
+      float: left;
+    }
+  }
+}

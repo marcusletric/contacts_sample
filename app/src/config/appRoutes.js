@@ -1,11 +1,13 @@
 contactsApp.constant('routes', [
         {
-            name: 'Kezdõképernyõ',
-            href: 'home'
+            name: "home",
+            url: "/home",
+            templateUrl: 'src/home/templates/home.html'
         },
         {
-            name: 'Betegfelvétel',
-            href: 'betegfelvetel?id',
+            name: 'contactDetails',
+            url: '/details?id',
+            templateUrl: 'src/editContact/templates/editContact.html',
             params: {
                 'id': null
             }
@@ -15,11 +17,7 @@ contactsApp.constant('routes', [
 
 contactsApp.config(function($stateProvider, routes) {
         routes.forEach(function (route) {
-            var stateHref = route.href.split('?')[0]
-            $stateProvider.state(stateHref, {
-                url: "/" + route.href,
-                templateUrl: 'src/' + stateHref + '/templates/' + stateHref + '.html'
-            });
+            $stateProvider.state(route.name, route);
         });
     }
 );
