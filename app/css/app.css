@@ -5264,5 +5264,8 @@ button.close {
         line-height: 35px; }
     .contact-list .row .avatar {
       height: 30px;
-      padding: 2.5px;
+      margin: 2.5px;
       float: left; }
+
+.contact-form {
+  max-width: 1024px; }

@@ -27,6 +27,7 @@ contactsApp.services.contactsProvider.service('contactsProvider', function($http
                 }
 
                 function proceed(){
+                    contactsCache = data;
                     deferred.resolve(data);
                 }
             }

@@ -6,10 +6,12 @@ contactsApp.constant('routes', [
         },
         {
             name: 'contactDetails',
-            url: '/details?id',
+            url: '/details?id&edit&new',
             templateUrl: 'src/editContact/templates/editContact.html',
             params: {
-                'id': null
+                'id': null,
+                'edit': null,
+                'new': null
             }
         }
     ]
