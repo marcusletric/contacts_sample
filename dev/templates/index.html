@@ -13,21 +13,9 @@
 </head>
 <body>
 <!-- Library source includes -->
-  <script src="bower_components/angular/angular.min.js"></script>
-  <script src="bower_components/angular-loader/angular-loader.min.js"></script>
-  <script src="bower_components/angular-route/angular-route.min.js"></script>
-  <script src="bower_components/angular-ui-router/release/angular-ui-router.min.js"></script>
-  <script src="bower_components/jquery/dist/jquery.min.js"></script>
-  <script src="bower_components/jquery/dist/jquery.slim.min.js"></script>
-  <script src="bower_components/jquery/external/sizzle/dist/sizzle.min.js"></script>
-
+@@include('./_lib.html')
 <!-- Dev source includes -->
-  <script src="src/app.js"></script>
-  <script src="src/config/appRoutes.js"></script>
-  <script src="src/components/version/interpolate-filter.js"></script>
-  <script src="src/components/version/version-directive.js"></script>
-  <script src="src/components/version/version.js"></script>
-
+@@include('./_includes.html')
 
 <!--[if lt IE 7]>
 <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>

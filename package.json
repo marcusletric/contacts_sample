@@ -1,12 +1,19 @@
 {
-  "name": "angular-seed",
+  "name": "talktalk_coding_task",
   "private": true,
-  "version": "0.0.0",
-  "description": "A starter project for AngularJS",
-  "repository": "https://github.com/angular/angular-seed",
-  "license": "MIT",
+  "version": "0.0.1",
+  "description": "Contact management app",
+  "repository": "https://github.com/marcusletric/contacts_sample",
+  "license": "",
   "devDependencies": {
     "bower": "^1.7.7",
+    "gulp" : "*",
+    "gulp-sass" : "*",
+    "gulp-concat" : "*",
+    "gulp-uglify" : "*",
+    "gulp-rename" : "*",
+    "gulp-file-include" : "*",
+    "run-sequence" : "*",
     "http-server": "^0.9.0",
     "jasmine-core": "^2.4.1",
     "karma": "^0.13.22",
@@ -22,7 +29,7 @@
     "update-deps": "npm update",
     "postupdate-deps": "bower update",
 
-    "prestart": "npm install",
+    "prestart": "",
     "start": "http-server -a localhost -p 8000 -c-1 ./app",
 
     "pretest": "npm install",
