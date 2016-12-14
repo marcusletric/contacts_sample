@@ -1,0 +1,8 @@
+<ul>
+    <li ng-repeat="contact in contacts">
+        <a ui-sref="contact.details({ id: contact.id })">
+            <p>{{::contact.name}}</p>
+            <p>{{::contact.email}}</p>
+        </a>
+    </li>
+</ul>

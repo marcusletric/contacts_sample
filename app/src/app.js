@@ -1,3 +1,7 @@
 'use strict';
 
-var contactsApp = angular.module('contactsApp',['ui.router']);
+var contactsApp = angular.module('contactsApp',[
+    'contactsApp.components',
+    'contactsApp.services',
+    'ui.router'
+]);
