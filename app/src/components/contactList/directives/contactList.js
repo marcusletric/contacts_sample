@@ -7,9 +7,6 @@ contactsApp.components.contactList.directive('contactList', function(){
         replace: true,
         scope: {
             'contacts': '='
-        },
-        link: function(scope,element,attrs){
-        
         }
     }
 });

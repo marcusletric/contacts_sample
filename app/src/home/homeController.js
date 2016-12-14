@@ -1,4 +1,4 @@
-contactsApp.controller('homeController', function($scope, contactsProvider){
+contactsApp.homeController = function($scope, contactsProvider){
     $scope.loadedContacts = [];
 
     contactsProvider.getContacts().then(function(contacts){
@@ -6,4 +6,6 @@ contactsApp.controller('homeController', function($scope, contactsProvider){
     },function(error){
         console.error(error);
     });
-});
+};
+
+contactsApp.controller('homeController', contactsApp.homeController);
