@@ -23,7 +23,9 @@ module.exports = function(config) {
       'tests/**/*.js'
     ],
 
-    autoWatch: true,
+    autoWatch: false,
+
+    singleRun: true,
 
     frameworks: ['jasmine'],
 
