@@ -56,15 +56,19 @@ contactsApp.services.contactsProvider.service('contactsProvider', function($http
         };
 
         self.storeContact = function(contact){
+            var deferred = $q.defer();
             if(!contact.id){
                 self.getContacts(true).then(function() {
                     contact.id = contactsCache.length;
                     contactsCache.push(contact);
                     storageProvider.store('contacts', contactsCache);
+                    deferred.resolve(true);
                 });
             } else {
                 contactsCache[contact.id] = contact;
                 storageProvider.store('contacts', contactsCache);
+                deferred.resolve(true);
             }
+            return deferred.promise;
         }
 });

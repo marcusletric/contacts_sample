@@ -7,9 +7,20 @@ module.exports = function(config) {
     files: [
       'bower_components/angular/angular.js',
       'bower_components/angular-route/angular-route.js',
+      'bower_components/angular-ui-router/release/angular-ui-router.js',
       'bower_components/angular-mocks/angular-mocks.js',
-      'app/src/components/**/*.js',
-      'view*/**/*.js'
+      'src/*.js',
+      'src/components/*.js',
+      'src/components/**/*.js',
+      'src/config/*.js',
+      'src/config/**/*.js',
+      'src/editContact/*.js',
+      'src/editContact/**/*.js',
+      'src/home/*.js',
+      'src/home/**/*.js',
+      'src/services/*.js',
+      'src/services/**/*.js',
+      'tests/**/*.js'
     ],
 
     autoWatch: true,
